@@ -1,0 +1,257 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+nav{
+    background: url(pic5.jpg);
+    background-position: start;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    
+}
+nav ul{
+    float: right;
+    line-height: 60px;
+}
+nav ul li{
+    display: inline;
+    padding: 20px 30px;
+    
+}
+nav ul li a{
+    color: white;
+    font-size: 20px;
+}
+nav .con{
+    padding: 8px 15px;
+    background: red;
+    border-radius: 30px;
+}
+.bar-btn{
+    color: white;
+    float: right;
+    font-size: 20px;
+    display: none;
+    cursor: pointer;
+}
+nav label.logo{
+    color: rgb(234, 231, 231);
+    float: left;
+    line-height: 60px;
+    padding: 20px 20px;
+    font-size: 20px;
+  
+    
+    
+}
+#check{
+    display: none;
+}
+
+.content{
+    position: absolute;
+    height:200px;
+    width: 350px;
+    margin:300px;
+
+}
+
+.content h3{
+    text-align: center;
+    color: whitesmoke;
+    font-size: 30px;
+   
+}
+.content button{
+    height: 30px;
+    width: 100px;
+    background: red;
+    border-radius: 30px;
+    border: none;
+    margin-left: 110px;
+    margin-top: 10px;
+}
+.content p{
+    color: whitesmoke;
+    text-align: center;
+    font-size:50px;
+}
+.title h1{
+    text-align: center;
+    color: rgb(57, 57, 132);
+    margin-top: 20px;
+}
+.line{
+    height: 5px;
+    width:200px;
+    background: red;
+    margin: 10px auto;
+    border-radius: 8px;
+}
+
+.row{
+    
+    display: flex;
+    
+    
+    
+    
+    
+ 
+ }
+
+
+.col{
+    height: 400px;
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 2px 2px rgb(232, 232, 232);
+    padding: 20px;
+}
+.row .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:80px;
+    
+}
+.row .col img{
+    height: 200px;
+    width: 200px;
+    
+ }
+ .col h4{
+    margin-top: 10px;
+    margin-bottom: 15px;
+ }
+ section button{
+    height: 35px;
+    width: 100px;
+    border: none;
+    background: red;
+    border-radius: 30px;
+    color: whitesmoke;
+ }
+.box1{
+    height: 400px;
+    width: 450px;
+    border:2px solid red;
+} 
+.box1 .line{
+    margin-left:10px;
+}
+.box1 p{
+    margin-top: 30px;
+}
+.box1 button{
+    height: 35px;
+    width: 100px;
+    border: none;
+    color: whitesmoke;
+    background: red;
+    border-radius: 30px;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+.box{
+    
+    display: flex;
+    
+    
+    
+    
+    
+ 
+ }
+ .tours{
+    
+ }
+ .tours .row .col{
+    width: 50%;
+    box-shadow: none;
+ }
+ .tours .gallery{
+    display: flex;
+    flex-wrap: wrap;
+ }
+ .gallery img{
+    width: 300px;
+    margin: 5px;
+ }
+.footer{
+    width: 100%;
+    height: 80px;
+    padding: 20px 50px;
+    margin: 0;
+    background: rgb(89, 88, 88);
+}
+.footer p{
+    text-align: center;
+    color: whitesmoke;
+}
+
+
+
+
+@media (max-width:850px){
+    .bar-btn{
+        display: block;
+    }
+    nav ul{
+        background: black;
+        left: -1000px;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        text-align: center;
+        transition: .9s;
+        
+    }
+    nav ul li{
+       
+        display: block;
+    }
+    .content{
+        display: none;
+    }
+    .tours{
+        
+    }
+    .row {
+        flex-direction: column;
+    }
+    .row .col{
+        margin: 20px auto;
+    }
+    .col img{
+        max-width: 90%;
+    }
+    .tours .col{
+        width: 100%;
+    }
+    .gallery{
+        justify-content: center;
+        align-items: center;
+    }
+.gallery img{
+    width: 90%;
+}
+
+    
+}
+
+
+
+#check:checked ~ ul{
+    left: 0;
+}
+nav ul li a:hover,.active{
+    color: red;
+}
